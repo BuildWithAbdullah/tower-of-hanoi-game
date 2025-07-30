@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tower of Hanoi</h1>
+        <div class="game-info">
+            <div>Moves: <span id="move-count">0</span>/50</div>
+            <div>Time: <span id="timer">00:00</span></div>
+            <button id="reset-button">Reset Game</button>
+        </div>
+        <div id="message"></div> <!-- Moved above .towers -->
+        <div class="towers">
+            <div class="tower" id="tower-A">
+                <div class="pole"></div>
+                <div class="base"></div>
+                <div class="label">A</div>
+            </div>
+            <div class="tower" id="tower-B">
+                <div class="pole"></div>
+                <div class="base"></div>
+                <div class="label">B</div>
+            </div>
+            <div class="tower" id="tower-C">
+                <div class="pole"></div>
+                <div class="base"></div>
+                <div class="label">C</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
